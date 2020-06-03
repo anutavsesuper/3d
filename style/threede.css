@@ -1,7 +1,151 @@
 @import "reset.css";
 
+body {
+  background-color: #FF1E00;
+  margin: 0;
+  padding: 0;
+  ooverflow-x: hidden;
+  overflow-y: hidden;
+  text-decoration: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  user-select: none;
+}
+
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
 
 iframe {
-  width: 80em;
-  height: 60em;
+  width: 50vw;
+  height: 35vw;
+}
+
+canvas {
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  display: block;
+}
+
+div {
+  ooverflow-x: hidden;
+  ooverflow-y: hidden;
+}
+
+.marquee {
+  position: absolute;
+  width: 100vw;
+  max-width: 100%;
+  top: 0.5vw;
+  height: 10vw;
+  overflow-x: hidden;
+  font-family: Geneva, Arial Black, Helvetica, sans-serif;
+  font-size: 10vw;
+  color: #0142FE;
+  transition: 0.5s;
+  z-index: 3;
+}
+
+.marquee:hover {
+  transition: 0.5s;
+  color: #FFFFFF;
+}
+
+.track {
+  position: absolute;
+  white-space: nowrap;
+  will-change: transform;
+  animation: marquee 250s linear infinite;
+}
+
+.marquee2 {
+  position: absolute;
+  width: 100vw;
+  max-width: 100%;
+  top: 16vw;
+  height: 10vw;
+  overflow-x: hidden;
+  font-family: Geneva, Arial Black, Helvetica, sans-serif;
+  font-size: 3vw;
+  color: #FFF;
+  -webkit-text-fill-color: #FF1E00;
+  -webkit-text-stroke: 2px #FFF;
+  transition: 0.5s;
+  z-index: 1;
+}
+
+.marquee2:hover {
+  transition: 0.5s;
+}
+
+.track2 {
+  position: absolute;
+  white-space: nowrap;
+  will-change: transform;
+  animation: marquee 300s linear infinite;
+}
+
+
+.marquee4 {
+  position: absolute;
+  width: 100vw;
+  max-width: 100%;
+  top: 20vw;
+  height: 10vw;
+  overflow-x: hidden;
+  font-family: Geneva, Arial Black, Helvetica, sans-serif;
+  font-size: 10vw;
+  color: #FFF;
+  -webkit-text-fill-color: #FF1E00;
+  -webkit-text-stroke: 2px #FFF;
+  transition: 0.5s;
+  z-index: 1;
+}
+
+.marquee4:hover {
+  transition: 0.5s;
+}
+
+.track4 {
+  position: absolute;
+  white-space: nowrap;
+  will-change: transform;
+  animation: marquee 300s linear infinite;
+}
+
+
+.marquee3 {
+  position: absolute;
+  width: 100vw;
+  max-width: 100%;
+  bottom: 0.5vw;
+  height: 10vw;
+  overflow-x: hidden;
+  font-family: Geneva, Arial Black, Helvetica, sans-serif;
+  font-size: 10vw;
+  color: #0142FE;
+  transition: 0.5s;
+  z-index: 3;
+}
+
+.marquee3:hover {
+  transition: 0.5s;
+  color: #FFFFFF;
+}
+
+.track3 {
+  position: absolute;
+  white-space: nowrap;
+  will-change: transform;
+  animation: marquee 400s linear infinite;
+}
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
 }

@@ -1,5 +1,13 @@
 @import "reset.css";
 
+/* font-family: "ArialBlack"; */
+@font-face {
+  font-family: "ArialBlack";
+  src: url("../fonts/ArialBlack/ArialBlack.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
 body {
   background-color: #FF1E00;
   margin: 0;
@@ -44,7 +52,7 @@ div {
   top: 0.5vw;
   height: 15vw;
   overflow-x: hidden;
-	font-family: Arial Black,Arial Bold,Gadget,sans-serif;
+	font-family: "ArialBlack";
   color: #0142FE;
   transition: 0.5s;
   z-index: 3;
@@ -66,10 +74,10 @@ div {
   position: absolute;
   width: 100vw;
   max-width: 100%;
-  top: 16vw;
+  top: 20%;
   height: 15vw;
   overflow-x: hidden;
-	font-family: Arial Black,Arial Bold,Gadget,sans-serif;
+	font-family: "ArialBlack";
   color: #FFF;
   -webkit-text-fill-color: #FF1E00;
   -webkit-text-stroke: 2px #FFF;
@@ -94,10 +102,10 @@ div {
   position: absolute;
   width: 100vw;
   max-width: 100%;
-  top: 35vw;
-  height: 5vw;
+  top: 50%;
+  height: 25vw;
   overflow-x: hidden;
-	font-family: Arial Black,Arial Bold,Gadget,sans-serif;
+	font-family: "ArialBlack";
   color: #FFF;
   -webkit-text-fill-color: #FF1E00;
   -webkit-text-stroke: 2px #FFF;
@@ -124,7 +132,7 @@ div {
   bottom: -2.5vw;
   height: 15vw;
   overflow-x: hidden;
-	font-family: Arial Black,Arial Bold,Gadget,sans-serif;
+	font-family: "ArialBlack";
   color: #0142FE;
   transition: 0.5s;
   z-index: 3;
@@ -154,5 +162,5 @@ h1 {
 }
 
 h2 {
-  font-size: 3vw;
+  font-size: 20vw;
 }
